@@ -19,7 +19,6 @@ class MyApp extends StatelessWidget {
           storageBucket: "tioli-c7b5e.appspot.com",
           messagingSenderId: "624629575687");
     }
-
     return OKToast (
       child:MaterialApp(
       title: 'Take it or Leave it',

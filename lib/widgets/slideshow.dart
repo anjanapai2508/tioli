@@ -211,7 +211,7 @@ class SlideShowWidgetState extends State<SlideShowWidget>
                 borderRadius: BorderRadius.circular(20),
                 child: Image.network(
                   data.img,
-                  fit: BoxFit.cover,
+                  fit: BoxFit.contain,
                   gaplessPlayback: true,
                 ),
               ),
