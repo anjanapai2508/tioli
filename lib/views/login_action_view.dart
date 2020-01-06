@@ -152,6 +152,7 @@ class _LoginActionViewState extends State<LoginActionView>
             child: Column(
       children: <Widget>[
         Padding(padding: EdgeInsets.only(top: 30),),
+        //TopNavigationBar(),
         SingleChildScrollView(
             child: ConstrainedBox(
           constraints: BoxConstraints(
@@ -159,7 +160,7 @@ class _LoginActionViewState extends State<LoginActionView>
           ),
           child: Column(
               mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                  Container(
                       alignment: Alignment.center,
@@ -169,7 +170,7 @@ class _LoginActionViewState extends State<LoginActionView>
                       child: TopNavigationBar()),
                 if (_isRegisterFormVisible)
                   Container(
-                      alignment: Alignment.center,
+                      alignment: Alignment(-0.9,-1.0),
                       decoration: BoxDecoration(
                           border: Border.all(width: 0, color: Colors.white)),
                       height: 30,
@@ -182,6 +183,7 @@ class _LoginActionViewState extends State<LoginActionView>
                       )),
                 if (_isRegisterFormVisible)
                   Container(
+                    
                     decoration: BoxDecoration(
                         border: Border.all(width: 0, color: Colors.white)),
                     child: Stack(
@@ -199,7 +201,8 @@ class _LoginActionViewState extends State<LoginActionView>
                     height: 60,
                   ),
                 Container(
-                    alignment: Alignment.center,
+                  
+                    alignment: Alignment(-0.9,-1.0),
                     decoration: BoxDecoration(
                         border: Border.all(width: 0, color: Colors.white)),
                     height: 30,
@@ -223,8 +226,9 @@ class _LoginActionViewState extends State<LoginActionView>
                   height: 60,
                 ),
                 Container(
+                  alignment: Alignment(-0.9,-1.0),
                     decoration: BoxDecoration(
-                        border: Border.all(width: 0, color: Colors.white)),
+                      border: Border.all(width: 0, color: Colors.white)),
                     height: 30,
                     child: Text(
                       'Password',
@@ -234,6 +238,7 @@ class _LoginActionViewState extends State<LoginActionView>
                       ),
                     )),
                 Container(
+                 // alignment: Alignment(-0.9,-1.0),
                   decoration: BoxDecoration(
                       border: Border.all(width: 0, color: Colors.white)),
                   child:
